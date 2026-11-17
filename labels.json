@@ -1,0 +1,25 @@
+{
+  "events": [
+    {
+      "kind": "brute_force_success",
+      "ip": "203.0.113.66",
+      "user": "ops",
+      "evidence": "14 failed then 1 success"
+    },
+    {
+      "kind": "lateral_movement",
+      "ips": [
+        "10.20.1.51",
+        "10.20.1.52"
+      ],
+      "user": "ops",
+      "evidence": "同一个 key 在 40 秒内登录两台主机"
+    },
+    {
+      "kind": "web_scan",
+      "ip": "198.51.100.23",
+      "evidence": "6 sensitive paths probed"
+    }
+  ],
+  "note": "benign look-alikes are intentionally unlabelled"
+}
